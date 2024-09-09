@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (5.9.1)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - Swinject (2.9.1)
+
+DEPENDENCIES:
+  - Moya (~> 15.0)
+  - Swinject
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Moya
+    - Swinject
+
+SPEC CHECKSUMS:
+  Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  Swinject: a827d508c6270da03ec74e558e728917a888fa9b
+
+PODFILE CHECKSUM: bd7b4ff402cca727e85db9a328082ee37def55f2
+
+COCOAPODS: 1.15.2

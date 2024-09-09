@@ -1,0 +1,6 @@
+framework module Pods_SwinjectProjectExample {
+  umbrella header "Pods-SwinjectProjectExample-umbrella.h"
+
+  export *
+  module * { export * }
+}
