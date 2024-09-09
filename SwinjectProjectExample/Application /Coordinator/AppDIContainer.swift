@@ -24,5 +24,14 @@ class AppDIContainer {
         container.register(HomeCoordinator.self) { r, navigationController in
             HomeCoordinator(container: r as! Container, navigationController: navigationController)
         }
+        
+        container.register(UserWebServiceProtocol.self) { _ in
+            UserWebService()
+        }
+
+        // ViewModels
+        container.register(HomeViewModel.self) { r in
+            HomeViewModel(userWebService: r.resolve(UserWebServiceProtocol.self)!)
+        }
     }
 }
