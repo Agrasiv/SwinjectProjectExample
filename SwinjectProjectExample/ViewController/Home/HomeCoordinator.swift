@@ -20,6 +20,7 @@ class HomeCoordinator {
     
     func start() {
         let homeViewController = HomeViewController()
+        homeViewController.viewModel = container.resolve(HomeViewModel.self)
         navigationController.pushViewController(homeViewController, animated: false)
     }
 }

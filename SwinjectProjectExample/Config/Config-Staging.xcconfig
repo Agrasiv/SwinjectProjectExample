@@ -1,0 +1,13 @@
+//
+//  Config-Staging.xcconfig
+//  SwinjectProjectExample
+//
+//  Created by Pyae Phyo Oo on 9/9/2567 BE.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+#include "Pods/Target Support Files/Pods-SwinjectProjectExample/Pods-SwinjectProjectExample.staging.xcconfig"
+
+ENV = Staging
+API_SERVER_URL = jsonplaceholder.typicode.com/
