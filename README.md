@@ -1,9 +1,13 @@
 ![13637225](https://github.com/user-attachments/assets/6445ff6e-d54c-4684-bee6-c46c790401df)
 
-Language - Swift
+## Implementation features
+- Dendency Injection using `Swinject`
 
-Architecture - MVVM
+## Architecture
+This project is POC for MVVM-C pattern where:
+- View is represented by `UIViewController`
+- ViewModel interacts with Model and prepares data to be displayed. View uses ViewModel's data either directly or through bindings (using Delegation) to configure itself. View also notifies ViewModel about user actions like button tap.
+- Coordinator is responsible for handling application flow, decides when and where to go based on events from ViewModel (using RxSwift bindings).
 
-Library - Swinject, Alamofire, Moya
+`View` <- `ViewController` <- bindings -> (`ViewModel` -> `Model`) <- bindings -> `Coordinator`
 
-Use swinject library to assign the API call with dependency injection.
